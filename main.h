@@ -3,9 +3,13 @@
 #include <string.h>
 
 void tablecheck( char *tablefile ) ;
-void encrypt(char *key, char *tablefile) ;
+void encrypt(char *key, char *tablefile, FILE *) ;
+extern unsigned char readBit(unsigned char *, int ) ;
+extern void writeBit(unsigned char *, int , unsigned char) ;
+
 
 extern int IP[64] ;
+extern int InvIP[64] ;
 extern int E[48] ;
 extern int P[32] ;
 

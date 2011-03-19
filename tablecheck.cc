@@ -3,6 +3,7 @@
 #include "main.h"
 
 int IP[64] ;
+int InvIP[64] ;
 int E[48] ;
 int P[32] ;
 int V[16] ;
@@ -78,6 +79,10 @@ void populateIP(char *value){
 			fprintf(stderr, "IP: %d missing or present more than once\n", i) ;
 			exit(0) ;
 		}
+	}
+
+	for (int h = 0 ; h < 64 ; ++h){
+		InvIP[IP[h] - 1] = h + 1 ;
 	}
 
 

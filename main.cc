@@ -243,9 +243,8 @@ int main(int argc, char **argv){
 		tablecheck(tablefile) ;
 	}
 	else if (choice == 2){
-		printf("encrypt selected -k=%s -t=%s\n", key, tablefile) ;
 		tablecheck(tablefile) ;
-		encrypt(key, tablefile) ;
+		encrypt(key, tablefile, inpF) ;
 	}
 	else if (choice == 3){
 		printf("dncrypt selected -k=%s -t=%s\n", key, tablefile) ;
