@@ -1,0 +1,32 @@
+							Aaveg Mittal
+							aavegmit@usc.edu
+							Homework5
+
+. Design
+        . There are total 4 files 3 source file(main.cc, keyschedule.cc, tablecheck.cc ) and 1 header file(main.h).
+        
+        main.cc: 
+                . mainly contains the general code, such as userinput parsing & then calling the appropriote function. 
+
+	keyschedule.cc
+		.unsigned char readBit(unsigned char *, int)
+			A very handy function, which reads a bit at a particular location in a char array.
+		.void writeBit(unsigned char *, int, unsigned char)
+			Another handy function to write the bit at a particular location in a char array specified by the third argument
+		.void KeySchedule
+			To produce 16 subkeys by iterating 16 rounds
+		.void Crypt
+			Encrypts/decrypts 8 bytes of data, using the set of subkeys specified in the argument
+		.void encrypt
+			Encrypt the input by calling Crypt function over blocks of 8 bytes of data
+		.void decrypt
+			Decrypts the cypher text by calling the Crypt function using the inverse of the sub keys
+		.void encrypt3
+			Performs tripple DES following the pattern as Encryption-Decryption-Encryption
+		.void decrypt3
+			Performs tripple DES following the pattern as Decryption-Encyption-Decryption
+
+
+2.      Testing
+        1. Please follow the instruction mentioned on homework 5 page.
+

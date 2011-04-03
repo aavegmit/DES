@@ -6,7 +6,7 @@
 
 using namespace std ;
 
-
+// Usage of the program
 void usage(){
 	printf("Usage:\n\t ./hw5 tablecheck -t=tablefile\n") ;
 	printf("\t ./hw4 encrypt -k=keyfile -t=tablefile [file]\n") ;
@@ -247,13 +247,16 @@ int main(int argc, char **argv){
 		encrypt(key, tablefile, inpF) ;
 	}
 	else if (choice == 3){
-		printf("dncrypt selected -k=%s -t=%s\n", key, tablefile) ;
+		tablecheck(tablefile) ;
+		decrypt(key, tablefile, inpF) ;
 	}
 	else if (choice == 4){
-		printf("encrypt3 selected -k=%s -t=%s\n", key, tablefile) ;
+		tablecheck(tablefile) ;
+		encrypt3(key, tablefile, inpF) ;
 	}
 	else if (choice == 5){
-		printf("dncrypt3 selected -k=%s -t=%s\n", key, tablefile) ;
+		tablecheck(tablefile) ;
+		decrypt3(key, tablefile, inpF) ;
 	}
 
 
